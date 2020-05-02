@@ -358,3 +358,11 @@ header.masthead p {
 .mw-50 {
   max-width: 50% !important;
 }
+
+/* MAP */
+
+#map {
+  height: 250px;
+  max-height: 500px;
+  width: 100%;
+}

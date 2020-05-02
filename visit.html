@@ -42,6 +42,11 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
 
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+
 </head>
 
 <body id="page-top">
@@ -91,15 +96,29 @@
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-heading text-white">Visiting the Farm</h2>
                     <hr class="light my-4">
+                    <br><br>
+
+                </div>
+
+                <div class="col-lg-12 mx-auto text-center">
+                    <div class="rounded" id="map"></div>
+                    <br><br>
+                </div>
+
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="text-white text-center">
+                        <h4>Our Farm</h4>
+                    </div>
+                    <hr class="light my-4">
                     <p class="text-faded mb-4">While we would love to show off the farm, we simply do not have the time
                         and are not set up to provide private tours during working farm hours. We are a working farm,
                         every minute of the day is planned. Our farm is full of hazards, we are not child proofed, and
                         someone could easily get hurt in the blink of an eye. When you come to our Farm Front Porch
                         Market Hours, there are ropes and cones blocking off areas of the farm for this reason. Please
                         do not enter blocked off areas when coming to pick up your products. We are only open for tours
-                        through AirBNB Experiences, or during our Farm Days. For more information about our AirBNB
+                        through Airbnb Experiences, or during our Farm Days. For more information about our Airbnb
                         Experiences and Farm Days, visit our <a class="orange-background-link" target="_blank"
-                            href="https://www.airbnb.com/experiences/797597?source=p2" a>AirBNB Page</a>.
+                            href="https://www.airbnb.com/experiences/797597?source=p2" a>Airbnb Page</a>.
                         <br><br>
                     </p>
 
@@ -138,7 +157,7 @@
                     </p>
                     <p class="text-faded mb-4">
                         Again, we ask that you please do not pass beyond the rope in the barnyard or the gates. We are
-                        only open for viewing the animals during <strong>Farm Days</strong> and the <strong>AirBNB
+                        only open for viewing the animals during <strong>Farm Days</strong> and the <strong>Airbnb
                             Experiences</strong>.
                     </p>
                     <br><br>
@@ -150,12 +169,12 @@
                     <br><br>
 
                     <div class="text-white text-center">
-                        <h4>AirBNB Experiences:</h4>
+                        <h4>Airbnb Experiences:</h4>
                     </div>
 
                     <p class="text-faded mb-4">
-                        We offer Farm Tours through AirBNB Experiences! <strong>All tours must be scheduled through
-                            AirBNB Experiences!</strong>
+                        We offer Farm Tours through Airbnb Experiences! <strong>All tours must be scheduled through
+                            Airbnb Experiences!</strong>
                     </p>
                     <p class="text-faded mb-4">
                         The walking tour starts at the duck enclosure (they are up front) and continues with a look at
@@ -178,7 +197,7 @@
                     </p>
                     <p class="text-faded mb-4">
                         Schedule your tour at <a class="orange-background-link" target="_blank"
-                            href="https://www.airbnb.com/experiences/797597?source=p2">AirBNB Experiences</a>.
+                            href="https://www.airbnb.com/experiences/797597?source=p2">Airbnb Experiences</a>.
                     </p>
                     <br><br>
 
@@ -224,8 +243,13 @@
                             page</a>! We have a minimum age of 15, and only take individuals interested in long-term
                         volunteering, no skills required.
                     </p>
-                    <p class="text-faded mb-4">
+                    <br><br>
 
+                    <div class="text-center text-white">
+                        <h4> HorsePower for Kids
+                        </h4>
+                    </div>
+                    <p class="text-faded mb-4">
                         Our Favorite Local Farm and Petting Zoo
                         We highly recommend you visit HorsePower for Kids & Animal Sanctuary! They are a local
                         non-profit farm and petting zoo where you will find a variety of animals, including some Dancing
@@ -367,6 +391,15 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
+    <!-- Map JS -->
+    <script src="./js/map.js"></script>
+
 
 </body>
 
