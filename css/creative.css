@@ -336,3 +336,25 @@ header.masthead p {
 .mh-75 {
   max-height: 75%
 }
+
+.orange-background-link {
+  color: #ffffff !important;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.orange-background-link:hover {
+  color: #fff !important
+}
+
+.paragraph-separator-img {
+  max-height: auto;
+  width: 100%;
+  /* even more control with max-width */
+  max-width: 720px;
+}
+
+.mw-50 {
+  max-width: 50% !important;
+}
