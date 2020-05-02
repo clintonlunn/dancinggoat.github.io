@@ -43,6 +43,11 @@
   <!-- Custom styles for this template -->
   <link href="css/creative.min.css" rel="stylesheet">
 
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+
 </head>
 
 <body id="page-top">
@@ -384,6 +389,31 @@
         <div class="col-lg-12 text-center">
           <h2 class="section-heading"> Market Locations</h2>
           <hr class="my-4">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-8 mx-auto text-center">
+        <div style="height: 250px;" class="rounded" id="map"></div>
+        <br><br>
+      </div>
+
+      <div class="col-lg-4 card" style=" height: 250px; width: 18rem;">
+        <div class="card-body text-center">
+          <h5 class="card-title">COVID-19 Locations:</h5>
+          <span>Farm Pickup:</span>
+          <button id="farmPickupBtn" type="button" class="btn btn-link">12502 Maverick Court,<br>Tampa, FL,
+            33626</button>
+          <br>
+          <span>Curbside Pickup:</span>
+          <button id="stPetePickupBtn" type="button" class="btn btn-link">532 3rd Street North,<br>St. Pete, FL
+            33701</button>
+          <br>
+          <!-- <button type="button" class="btn btn-link">101 1st St SE,<br>St. Petersburg, FL 33701</button>
+          <br>
+          <button type="button" class="btn btn-link">12502 Maverick Court,<br>Tampa, FL, 33626</button>-->
         </div>
       </div>
     </div>
@@ -740,6 +770,14 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+  <!-- Map JS -->
+  <script src="./js/map.js"></script>
 
 </body>
 
