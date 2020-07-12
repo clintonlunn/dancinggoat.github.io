@@ -780,6 +780,47 @@
   <!-- Map JS -->
   <script src="./js/map.js"></script>
 
+
+  <!-- Modal -->
+  <div class="modal fade" id="covidModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          Due to recent events regarding spiking cases of COVID-19 within Hillsborough and Pinellas County, we have
+          created some additional policies to help our family, farm staff, and customers stay safe. For more
+          information, please visit our COVID-19 page where we outline in detail what actions we are taking.
+          <br><br>
+          <button type="button" class="btn btn-primary" onclick="location.href='./covid.html';">COVID Page</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- open model on page load -->
+  <script>
+    $(document).ready(function () {
+
+      // if (location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.hostname === "") {
+      //   $(document).ready(function () {
+      //     $("#covidModal").modal('show');
+      //   });
+      // }
+      if ($.cookie('pop') == null) {
+        $("#covidModal").modal('show');
+        $.cookie('pop', '1');
+      }
+    });
+  </script>
+
 </body>
 
 </html>
