@@ -50,7 +50,6 @@
 </head>
 
 <body id="page-top">
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -66,23 +65,29 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Products</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#portfolio">Products</a>
+              <a class="dropdown-item" href="#order">How to order</a>
+              <a class="dropdown-item" href="#mailorder">Soap by mail</a>
+              <!-- TODO: educational page about soap either on dancinggoatsoaps or on dancinggoatdairy -->
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#locations">Locations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#order">Order</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="./visit.html">Visit Us</a>
+            <a class="nav-link js-scroll-trigger" href="./visit.html">Visit</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="./covid.html">COVID-19</a>
+            <a class="nav-link js-scroll-trigger" href="./covid.html">COVID</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="https://thedancinggoat.wordpress.com/">Blog
@@ -407,7 +412,7 @@
 
       <div class="col-md-4 card mx-auto d-block" style=" height: 250px; width: 18rem;">
         <div class="card-body text-center">
-          <h5 class="card-title">COVID-19 Locations:</h5>
+          <h5>COVID-19 Locations:</h5>
           <span>Farm Pickup:</span>
           <br>
           <button id="farmPickupBtn" type="button" style="text-transform: none !important;" class="btn btn-link">12502
@@ -662,75 +667,60 @@
       </div>
   </section>
 
-  <section id="mailorder">
+  <!-- <section id="mailorder">
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-sm-12 text-center">
           <h2 class="section-heading">Order Soap By Mail</h2>
           <hr class="my-4">
         </div>
         <div class="container">
           <div class="row">
-            <!--                         
-              <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box mt-5 mx-auto">
-                  <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-                  <h3 class="mb-3">Made with Love</h3>
-                  <p class="text-muted mb-0">Farm products made fresh on site</p>
-                </div>
-              </div>
-              -->
             <div class="col-sm-12 text-center">
               <div class="mt-5 mx-auto">
-                <div class="row">
-                  <div class="col-sm-12 text-center">
+                <div class="row col-sm-4"></div>
+                <div class="row col-sm-12">
+                  <div class="text-center">
                     <i class="fa fa-4x fa-shipping text-primary mb-3 sr-icons"></i>
 
                   </div>
                   <div class="col-sm-12 text-center">
                     <h4>We also offer mail order services for our soap!</h4>
                     <br>
-                    <div class="col-sm-12 text-center">
-                      <i class="fa fa-4x fa-dollar text-primary mb-3 sr-icons"></i>
-                    </div>
-                    <h4>Prices:</h4>
-                    <p>There is a minimum order of 5 bars.</p>
-                    <p>Soap is $4.50/bar.</p>
-                    <p>Shampoo bars are $5.50/bar</p>
-                    <p>Wholesale rates are available for orders of 50 bars or more. Contact us directly for more
-                      information.</p>
+                    <img class="card-img-top" src="./img/aboutlavendar.jpg" alt="soap picture">
 
-                    <i class="fa fa-4x fa-envelope-o text-primary mb-3 sr-icons"></i>
-                    <h4>Ordering:</h4>
-                    <p>To order, please email thedancinggoat83@gmail.com, or message us on <a target="_blank"
-                        href="https://www.facebook.com/dancinggoatdairy/">Facebook</a>. Please include
-                      your name, shipping address, and a contact number in case we have questions.
-                    </p>
-                    <i class="fa fa-4x fa-credit-card text-primary mb-3 sr-icons"></i>
-                    <h4>Payment:</h4>
-                    <p>We accept Zelle (thedancinggoat83@gmail.com) or Venmo (<a target="_blank"
-                        href="https://venmo.com/Pam-Lunn">Pam-Lunn</a>). However, if neither of those
-                      will work, please contact us and we will try our best to work with your situation.</p>
-                    <br>
-                    <i class="fa fa-4x fa-truck text-primary mb-3 sr-icons"></i>
-                    <h4>Shipping:</h5>
-                      <p>All mail orders are sent within 2 business days in the smallest Priority Mail Flat Rate
-                        box/envelope that will accommodate them. There is no handling charge, just the actual Flat Rate
-                        amount.
-                        <!-- See the chart to know what size box you will need. -->
+                    <h5 class="card-title">Dancing Goat Soaps</h5>
+                    <p class="card-text">Visit our online store to order our hand made soap anywhere in the
+                      contiguous US!</p>
+                    <a href="https://dancinggoatsoaps.com" class="btn btn-primary">Go</a>
                   </div>
                 </div>
-                <!--<i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>-->
+                <div class="row col-sm-4"></div>
               </div>
             </div>
           </div>
-
-          <!-- <div class="col-lg-12 col-sm-12 mx-auto text-center">
-          <img style="height: 750px; width: 700px;" src="./img/order.png">
-        </div> -->
+          <br>
         </div>
-        <br>
       </div>
+    </div>
+  </section> -->
+  <section id="mailorder">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading">Mail order soap!</h2>
+          <hr class="my-4">
+          <img class="card-img-top mb-3" src="./img/aboutlavendar.jpg" alt="soap picture">
+          <p class="mb-5">We are excited to announce that we have launched our online soap store. Get the same soaps you
+            know and love delivered right to your door.</p>
+          <p class="card-text">Visit our online store to order our hand made soap anywhere in the
+            contiguous US!</p>
+          <a href="https://dancinggoatsoaps.com" class="btn btn-primary">Dancing Goat Soaps</a>
+        </div>
+      </div>
+      <div class="row text-center">
+      </div>
+    </div>
   </section>
 
   <section id="contact">
@@ -794,17 +784,23 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+          <h5 class="modal-title" id="exampleModalLabel">Dancing Goat Soaps</h5>
+
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body text-center">
-          Due to recent events regarding spiking cases of COVID-19 within Hillsborough and Pinellas County, we have
-          created some additional policies to help our family, farm staff, and customers stay safe. For more
-          information, please visit our COVID-19 page where we outline in detail what actions we are taking.
-          <br><br>
-          <button type="button" class="btn btn-primary" onclick="location.href='./covid.html';">COVID Page</button>
+          <img class="d-block w-100 my-2" src="./img/dancinggoatsoapintro.png" alt="Dancing Goat Sign">
+          <p>
+            We are very proud to announce that we have launched our online soap store! We now offer mail order soap by
+            USPS flat-rate shpping to anywhere in the USA!
+          </p>
+          <p>
+            To find out more, please visit our website at:
+          </p>
+          <button type="button" class="btn btn-primary" onclick="location.href='https\://dancinggoatsoaps.com';">Dancing
+            Goat Soaps</button>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
