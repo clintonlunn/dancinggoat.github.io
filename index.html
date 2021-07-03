@@ -403,28 +403,41 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row mx-2">
 
       <div class="col-md-8 mx-auto text-center">
         <div style="height: 250px;" class="rounded" id="map"></div>
         <br><br>
       </div>
 
-      <div class="col-md-4 card mx-auto d-block" style=" height: 250px; width: 18rem;">
+      <div class="col-md-4 card mx-auto d-block" style=" height: 250px; width: 18rem; overflow: auto;">
         <div class="card-body text-center">
-          <h5>COVID-19 Locations:</h5>
+        <div>
           <span>Farm Pickup:</span>
           <br>
           <button id="farmPickupBtn" type="button" style="text-transform: none !important;" class="btn btn-link">12502
             Maverick Court,<br>Tampa, FL,
             33626</button>
-          <br>
+        </div>
+        <div>
           <span>Curbside Pickup:</span>
           <br>
           <button id="stPetePickupBtn" type="button" style="text-transform: none !important;" class="btn btn-link">532
             3rd Street North,<br>St. Pete, FL
             33701</button>
+        </div>
+        <div>
+          <span>The Shops at Wiregrass:</span>
           <br>
+          <button id="wiregrassShopsBtn" type="button" style="text-transform: none !important;" class="btn btn-link">28211 Paseo Drive<br>Wesley Chapel, FL
+            33543</button>
+        </div>
+        <div>
+          <span>Carrolwood Market at Carrolwood Culture Center:</span>
+          <br>
+          <button id="carrolwoodMarketBtn" type="button" style="text-transform: none !important;" class="btn btn-link">4537 Lowell Rd<br>Tampa, FL
+            33618</button>
+        </div>
           <!-- <button type="button" class="btn btn-link">101 1st St SE,<br>St. Petersburg, FL 33701</button>
           <br>
           <button type="button" class="btn btn-link">12502 Maverick Court,<br>Tampa, FL, 33626</button>-->
@@ -451,26 +464,50 @@
 
           </div>
         </div>
+
+        <div class="col-lg-6 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <!--<i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>-->
+            <img style="height: 250px; width: 275px" src="./img/Locations/stpetepickuplocation.jpg"
+              alt="The Dancing Goat Home Pickup">
+            <h3 class="mb-3">St. Pete Curbside Pickup</h3>
+            <p class="text-muted mb-0">Pickup by preorders only Saturday 10AM - 12PM.</p>
+            <!-- <p class="text-muted mb-0">To place an order, please email <a
+                href="mailto:thedancinggoat83@gmail.com?Subject=Order%20inquery"
+                target="_top">thedancinggoat83@gmail.com</a></p> -->
+            <p class="text-muted mb-0">532 3rd Street North, St. Pete, FL 33701
+            </p>
+
+          </div>
+        </div>
         <div class="col-lg-6 col-md-6 text-center">
           <div class="service-box mt-5 mx-auto">
             <!--<i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>-->
             <a href="http://saturdaymorningmarket.com/">
-              <img src="https://farm2.staticflickr.com/1789/42316108664_bc78e7000c_o.png" alt="Saturday Morning Market">
+              <img style="height: 250px;" src="./img/Locations/shopsatwiregrass.png" alt="The Shops at Wiregrass">
             </a>
-            <h3 class="mb-3">St. Petersburg Saturday Morning Market</h3>
-            <p class="text-muted mb-0"><strong>Summer Location: </strong><a
-                href="https://www.facebook.com/WilliamsParkMarket/">William's Park</a> at 330 2nd Avenue N. From the
-              first Saturday in June until the last Saturday August. 9AM - 1PM</p>
+            <h3 class="mb-3">The Shops at Wiregrass</h3>
+            <p class="text-muted mb-0">Pickup by preorders only Wednesdays 3PM - 8PM and Sunday 1PM-4PM.</p>
+            <!-- <p class="text-muted mb-0">To place an order, please email <a
+                href="mailto:thedancinggoat83@gmail.com?Subject=Order%20inquery"
+                target="_top">thedancinggoat83@gmail.com</a></p> -->
+            <p class="text-muted mb-0">12502 Maverick Court, Tampa, FL, 33626</p>
             <br>
-            <p class="text-muted mb-0"><strong>Winter Location:</strong> Located at 101 1st St. SE in the parking lot of
-              Al Lang Field and open from the first Saturday in October and last Saturday in May. 9AM - 2PM</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <!--<i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>-->
+            <a href="http://saturdaymorningmarket.com/">
+              <img src="./img/Locations/carrolwoodmarket.png" alt="Saturday Morning Market">
+            </a>
+            <h3 class="mb-3">Carrolwood Market</h3>
+            <p class="text-muted mb-0">Pickup by preorders only Wednesdays 3PM - 8PM and Sunday 1PM-4PM.</p>
+            <!-- <p class="text-muted mb-0">To place an order, please email <a
+                href="mailto:thedancinggoat83@gmail.com?Subject=Order%20inquery"
+                target="_top">thedancinggoat83@gmail.com</a></p> -->
+            <p class="text-muted mb-0">12502 Maverick Court, Tampa, FL, 33626</p>
             <br>
-            <!-- <p><strong>NOTE: Currently closed due to COVID-19. We will be returning once we are able to do so.</strong>
-            </p> -->
-            <p>Click for <a href="https://saturdaymorningmarket.com/services/directionsparking/">parking information</a>
-            </p>
-            <!-- saturday morning market -->
-            <!-- williams park summer market -->
           </div>
         </div>
       </div>
@@ -768,24 +805,33 @@
   <!-- Modal -->
   <div class="modal fade" id="covidModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog" style="max-width: 800px;"role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Dancing Goat Soaps</h5>
+          <h5 class="modal-title" id="exampleModalLabel">July 2021 Calendar</h5>
 
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body text-center">
-          <img class="d-block w-100 my-2" src="./img/dancinggoatsoapintro.png" alt="Dancing Goat Sign">
+        <div class="modal-body">
+          <!-- <img class="d-block w-100 my-2" src="./img/dancinggoatsoapintro.png" alt="Dancing Goat Sign"> -->
 
-          <p>
-            We are very proud to announce that we have launched our online soap store! We now offer mail order soap by
-            USPS flat-rate shpping to anywhere in the USA!
+          <p>Saturday July 3 - Shops at Wiregrass (Bruce B Downs and SR 56 - Wesley Chapel)</p>
+          <p>Sunday July 4 - Farm Market at our farm 1-4pm</p>
+          <p>Wednesday July 7 - Farm Market at our farm 3-8pm</p>
+          <p>Saturday July 10 - Carrollwood Market at Carrollwood Culture Center in Carrollwood Village</p>
+          <p>Sunday July 11 - Farm Market at our farm 1-4pm</p>
+          <p>Wednesday July 14 - Farm Market at our farm 3-8pm</p>
+          <p>Saturday July 17 - Shops at Wiregrass (Bruce B Downs and SR 56)</p>
+          <p>Sunday July 18 - Farm Market at our farm 1-4pm</p>
+          <p>Wednesday July 21 - Farm Market at our farm 3-8pm</p>
+          <p>Saturday July 24 - 532 3rd Street North Drive Thru in St. Pete 10-12</p>
+          <p>Sunday July 25 - Farm Market at our farm 1-4</p>
+          <p>Wednesday July 28 - Farm Market at our farm 3-8pm</p>
+          <p>Saturday July 31 - tentatively scheduled 532 3rd Street North Drive through 10-12</p>
           </p>
-          <button type="button" class="btn btn-primary" onclick="location.href='https\://dancinggoatsoaps.com';">Dancing
-            Goat Soaps</button>
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

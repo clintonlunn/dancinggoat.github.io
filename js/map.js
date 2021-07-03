@@ -24,6 +24,9 @@ stpeteMarker.bindPopup(('<a href="https://www.google.com/maps/place/532+3rd+St+N
 
 const farmPickup = document.getElementById("farmPickupBtn");
 const stPetePickup = document.getElementById("stPetePickupBtn");
+const shopsWiregrass = document.getElementById("wiregrassShopsBtn");
+const carrolwoodMarket = document.getElementById("carrolwoodMarketBtn");
+
 
 farmPickup.addEventListener('click', function (e) {
     map.flyTo([28.040, -82.634800], 15);
@@ -32,5 +35,15 @@ farmPickup.addEventListener('click', function (e) {
 
 stPetePickup.addEventListener('click', function () {
     map.flyTo([27.778140, -82.637380], 15);
+    stpeteMarker.openPopup();
+});
+
+shopsWiregrass.addEventListener('click', function () {
+    map.flyTo([28.189298634064336, -82.3493896944194], 15);
+    stpeteMarker.openPopup();
+});
+
+carrolwoodMarket.addEventListener('click', function () {
+    map.flyTo([28.073082463682763, -82.5227574250408], 15);
     stpeteMarker.openPopup();
 });

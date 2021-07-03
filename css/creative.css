@@ -370,3 +370,7 @@ header.masthead p {
   max-height: 500px;
   width: 100%;
 }
+
+.modal-dialog {
+  max-width: 800px !important;
+}
